@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 100vw;
+    display: flex;
+}
+.left{
+    position: fixed;
+    height: 100vh;
+    width:300px ;
+    background-color: rgb(252, 21, 21);
+    text-align: center;
+    padding-top: 100px;
+    font-size: large;
+    font-weight: bold;
+}
+ul{
+    margin-top: 100px;  
+    animation-name: animation2; 
+    animation-duration: 2s ;
+}
+h1,a{
+    color: white;
+    display: block;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+.right{
+    animation-name: animation;
+    animation-duration: 1.5s;
+    margin-left: 300px;
+    padding-left: 50px;
+    padding-top: 100px;
+    height: 800px;
+    width: 100vw;
+    font-size:x-large;
+    font-weight:900;
+}
+h2{
+    color: red;
+}
+.right h1{
+    color: black;
+}
+.image{
+    height: 300px;
+width: 100%;
+display: flex;
+}
+.image2{
+    margin-top: 20px;
+    height: 300px;
+width: 100%;
+display: flex;
+}
+.img{
+    border-radius: 10px;
+    height: 300px;
+width: 400px;
+background-image: url(atrium.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.img2{
+    border-radius: 10px;
+    margin-left: 50px;
+    height: 300px;
+width: 400px;
+background-image: url(kitchenconcrete.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img3{
+    border-radius: 10px;
+    height: 300px;
+width: 400px;
+background-image: url(livingroom.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.img4{
+    border-radius: 10px;
+    margin-left: 50px;
+    height: 300px;
+width: 400px;
+background-image: url(bedroom.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.cont{
+    
+    margin-left: 320px;
+    height: 350px;
+    width: 850px;
+}
+.cont h1{
+    font-size:xx-large;
+    font-weight:900;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+}
+.header,.contact {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.header ,.contact  h1 {
+  font-size: 40px;
+  color: #000000;
+}
+.header ,.contact p {
+  font-size: 18px;
+  color: #000000;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.box {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.box img {
+  width: 200px;
+  height: 200px;
+ 
+}
+.box h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+input{
+    height: 40px;
+    width: 97%;
+    border-radius: 5px;
+}
+button{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .left {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .right {
+        margin-left: 0;
+        padding-left: 10px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .cont {
+        margin-left: 0;
+        width: 100%;
+    }
+    .img, .img2, .img3, .img4 {
+        width: 100%; 
+    }
+}
+@media (max-width: 480px) {
+    .right {
+        padding: 10px;
+        font-size: large;
+    }
+    .cont h1 {
+        font-size: large;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+}
+@keyframes animation {
+    to{margin-top: 0;}
+    from{margin-top: 100px;}
+    
+}
+@keyframes animation2 {
+    to{margin-right: 0;}
+    from{margin-right: 100px;}
+    
+}
